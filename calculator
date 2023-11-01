@@ -1,0 +1,23 @@
+def calculator(x,y,n):
+    if n=="+":
+        print(x+y)
+    elif n=="-":
+        print(x-y)
+    elif n=="*":
+        print(x*y)
+    elif n=="/":
+        if y!=0:
+            print(x/y)
+        else:
+            print("not valid")
+    elif n=="%":
+        if y!=0:
+            print(x%y)
+        else:
+            print("error:nt valid")
+    else:
+        print("invalid operator")
+x=float(input("enter the fist value:"))
+y=float(input("enter the second value:"))
+n=input("choose operator(+,-,*,/,%):")
+calculator(x,y,n)
